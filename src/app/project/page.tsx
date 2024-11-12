@@ -1,5 +1,5 @@
 import Border from '../border/page';
-import Wrapper from '../wrapper/page';
+import Wrapper from '../../components/wrapper/page';
 
 export default function Projects() {
   return (
@@ -9,11 +9,13 @@ export default function Projects() {
         <h1 className='text-center font-bold text-5xl'>Hackathon-1</h1>
 
         <p className='text-center  font-bold text-3xl py-5'>Quarter-2</p>
+        </div>
         <div className='flex py-12 flex-col md:flex-row space-y-8  md:space-x-2'>
         </div>
-        </div>
-        <Border />
         
+        
+        {/* //every project here */}
+        <Border />   
         
 
     </Wrapper>

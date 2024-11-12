@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 import Link from 'next/link';
-import Wrapper from "../wrapper/page";
+import Wrapper from "../../components/wrapper/page";
 
 
 // Interface for item properties
