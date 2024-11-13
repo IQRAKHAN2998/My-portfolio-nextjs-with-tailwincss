@@ -39,12 +39,12 @@ const items: ItemProps[] = [
     buttonText: 'Simple Calculator'
   },
   {
-    imageUrl: '/funzone.jfif',
+    imageUrl: '/funzone.png',
     linkUrl: 'https://github.com/IQRAKHAN2998/cli-number-guessing.git',
     buttonText: 'Guessing-Number'
   },
   {
-    imageUrl: '/atm.jfif',
+    imageUrl: '/atmmachine.png',
     linkUrl: 'https://github.com/IQRAKHAN2998/ATM-machine.git',
     buttonText: 'Atm-Machine'
   },
