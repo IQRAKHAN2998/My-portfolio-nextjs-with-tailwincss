@@ -9,8 +9,8 @@ export default function Home() {
         <div  className= " bg-pink-200 max-w-full max-h-screen flex justify-around flex-col sm:flex-row items-center md:gap-72">
           {/* leftside */}
           <div className=" pt-20 pl-10 font-bold text-black text-2xl sm:text-4xl flex-1">
-            <h1 className=" ">  Hi, I am IQRA KHAN</h1>
-            <h2 className="text-3lg sm:text-4xl "> I am a Front-end Developer</h2>
+            <h1 className="animate-pulse ">  Hi, I am IQRA KHAN</h1>
+            <h2 className="text-3lg sm:text-4xl animate-pulse "> I am a Front-end Developer</h2>
 
             <div className="my-5 ">
 
