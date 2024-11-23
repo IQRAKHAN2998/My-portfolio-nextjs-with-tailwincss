@@ -14,6 +14,11 @@ interface ItemProps {
 // Array of items
 const items: ItemProps[] = [
   {
+    imageUrl: '/portfolio.png',
+    linkUrl: 'https://portfolio-with-custom-css-omega.vercel.app/',
+    buttonText: 'portfolio-with-css'
+  },
+  {
     imageUrl: '/resume.png',
     linkUrl: 'https://hackhthon-1-milestone-static-resume-builder-iqrakhan2998.vercel.app/',
     buttonText: 'Static Resume-Builder'
@@ -48,25 +53,25 @@ const items: ItemProps[] = [
     linkUrl: 'https://github.com/IQRAKHAN2998/ATM-machine.git',
     buttonText: 'Atm-Machine'
   },
+
 ];
 
 const MyComponent: React.FC = () => {
   return (
     <Wrapper>
-      <div className='flex justify-around flex-col flex-wrap sm:flex-row items-center space-y-5 '>
+      <div className='flex justify-around flex-col flex-wrap sm:flex-row items-center space-y-5'>
     
       {items.map((item, index) => (
-        <div key={index}  className=" mx-20 shadow-xl rounded-lg w-4/12 text-blue-950 items-center max-w-full ">
+        <div key={index}  className=" mx-20 shadow-xl rounded-xl w-4/12 text-blue-950 items-center max-w-full  border border-black">
           {/* Image */}
           <Image src={item.imageUrl} alt={`Image ${index + 1}`} width={300} height={250} className="w-500 h-40" />
 
           {/* Link */}
-          <Link href={item.linkUrl} target="_blank" className="text-blue-900 text-center font-bold underline text-2xl  ">
-           visit link
+          <Link href={item.linkUrl} target="_blank" className="text-blue-900 align-center  font-bold underline text-2xl  ">
+          <h2 className="text-center pt-2 pb-2">{item.buttonText}</h2> 
           </Link>
 
-          {/* Button */}
-          <button>{item.buttonText}</button>
+        
         </div>
       ))}
     </div>
