@@ -13,6 +13,12 @@ interface ItemProps {
 
 // Array of items
 const items: ItemProps[] = [
+  
+  {
+    imageUrl: '/panaverseDao.png',
+    linkUrl: 'https://panaverse-dao-website-seven.vercel.app/',
+    buttonText: 'Panaverse-Dao-Website'
+  },
   {
     imageUrl: '/portfolio.png',
     linkUrl: 'https://portfolio-with-custom-css-omega.vercel.app/',
