@@ -9,7 +9,7 @@ export default function About() {
                 <h1 className="font-bold text-3xl text-center">About Me</h1>
             </div>
 
-            <div className="flex items-start space-x-8 flex-col sm:flex-row ">
+            <div className="flex items-center space-x-8 flex-col sm:flex-row  ">
 
                 <div>
                     <Image src="/images.jpeg" alt="aboutpic" width={400} height={300} className="w-200 h-300 sm:w-500 h-400" ></Image>

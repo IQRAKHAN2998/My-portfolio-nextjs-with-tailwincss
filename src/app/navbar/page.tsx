@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react"
 import {
     Sheet,
+    SheetClose,
     SheetContent,
     SheetDescription,
     SheetHeader,
@@ -28,12 +29,13 @@ export default function Navbar() {
                     </SheetTrigger>
                     <SheetContent>
                         <SheetHeader>
-                            <ul className="bg-slate-500 ">
+                            <ul className="bg-white flex flex-col items-start font-medium">
                                 <li className="space-x-5 py-4">
-                                    <Link href="/">Home</Link>
-                                    <Link href="/about">About</Link>
-                                    <Link href="/project">Project</Link>
-                                    <Link href="/contact">Contact</Link>
+                                    <Link href="/" className=" hover:bg-blue-400">Home</Link>
+                                    <Link href="/about"  className=" hover:bg-blue-400">About</Link>
+                                    <Link href="/project"  className=" hover:bg-blue-400">Project</Link>
+                                    <Link href="/contact"  className=" hover:bg-blue-400">Contact</Link>
+                                    <SheetClose className="bg-white font-bold">X</SheetClose>
 
                                 </li>
                             </ul>

@@ -68,7 +68,7 @@ const MyComponent: React.FC = () => {
       <div className='flex justify-around flex-col flex-wrap sm:flex-row items-center space-y-5'>
     
       {items.map((item, index) => (
-        <div key={index}  className=" mx-20 shadow-xl rounded-xl w-4/12 text-blue-950 items-center max-w-full  border border-black">
+        <div key={index}  className=" mx-20 shadow-xl rounded-xl w-4/12 text-blue-950 items-center max-w-full  border-4 border-black">
           {/* Image */}
           <Image src={item.imageUrl} alt={`Image ${index + 1}`} width={300} height={250} className="w-500 h-40" />
 
