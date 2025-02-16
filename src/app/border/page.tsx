@@ -32,7 +32,7 @@ const items: ItemProps[] = [
 
   },
   {
-    imageUrl: '/ui.PNG',
+    imageUrl: '/ui.png',
     linkUrl: 'https://practice-e-commerce.vercel.app/',
     buttonText: 'Statics-UI-website'
 
