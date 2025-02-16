@@ -1,5 +1,5 @@
 import Border from '../border/page';
-import Wrapper from '../../components/wrapper/page';
+import Wrapper from '@/components/wrapper/page';
 
 export default function Projects() {
   return (

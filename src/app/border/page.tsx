@@ -13,6 +13,30 @@ interface ItemProps {
 
 // Array of items
 const items: ItemProps[] = [
+  {
+    imageUrl: '/website.png',
+    linkUrl: 'https://hackathon-template-0-8gxr.vercel.app',
+    buttonText: 'Ecommerce-Furniture-Website'
+
+  },
+  {
+    imageUrl: '/agentic.webp',
+    linkUrl: 'https://agentic-ai-nine.vercel.app/',
+    buttonText: 'Agentic-AI'
+
+  },
+  {
+    imageUrl: '/BLOG.png',
+    linkUrl: 'https://blog-ai--alpha.vercel.app/',
+    buttonText: 'Blog-In-AI'
+
+  },
+  {
+    imageUrl: '/ui.PNG',
+    linkUrl: 'https://practice-e-commerce.vercel.app/',
+    buttonText: 'Statics-UI-website'
+
+  },
   
   {
     imageUrl: '/panaverseDao.png',
