@@ -5,27 +5,37 @@ import Cv from "../cv/cv";
 export default function Home() {
   return (
     <Wrapper>
-      <section>
-        <div  className= "bg-[url(/pinkbg.jpeg)] bg-no-repeat bg-cover max-w-full max-h-screen flex justify-around flex-col-reverse sm:flex-row items-center md:gap-72">
-          {/* leftside */}
-          <div className=" pt-10 pl-10 font-bold text-black text-2xl sm:text-4xl flex-1">
-            <h1 className="animate-in ">  Hi, I am IQRA KHAN</h1>
-            <h2 className="text-3lg sm:text-4xl animate-pulse "> I am a Front-end Developer</h2>
+      <section className="bg-[#D7CCC8] py-10"> {/* Light Brown Background */}
+        <div className="container mx-auto flex flex-col-reverse sm:flex-row items-center justify-between px-6 md:px-20 gap-10">
 
-            <div className="my-5 ">
+          {/* Left Side */}
+          <div className="flex-1 text-center sm:text-left">
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#4E342E] mb-4 animate-in">
+              Hi, I am IQRA KHAN
+            </h1>
+            <h2 className="text-xl sm:text-3xl font-semibold text-[#5D4037] animate-pulse">
+              I am a Front-end Developer
+            </h2>
 
-               <Cv />
-              
+            <div className="mt-6">
+              <Cv />
             </div>
           </div>
-          
-          {/* rightside */}
-          <div className="flex-1 py-8">
-            <Image src="/mypic.jpg" alt="mypic" width={200} height={200} className="border rounded-full w-300 h-100"></Image>
+
+          {/* Right Side */}
+          <div className="flex-1 flex justify-center sm:justify-end">
+            <Image
+              src="/mypic.jpg"
+              alt="mypic"
+              width={250}
+              height={250}
+              className="rounded-full border-4 border-[#6D4C41] object-cover shadow-lg"
+            />
           </div>
 
         </div>
       </section>
-      </Wrapper>
-        )
+
+    </Wrapper>
+  )
 }

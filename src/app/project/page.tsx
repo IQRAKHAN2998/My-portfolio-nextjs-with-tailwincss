@@ -1,24 +1,26 @@
+
 import Border from '../border/page';
 import Wrapper from '@/components/wrapper/page';
 
 export default function Projects() {
   return (
     <Wrapper>
-      <h1 className="text-4xl underline font-bold text-center p-5 animate-bounce">My-Projects</h1>
-      <div className=' text-white bg-slate-700 pt-10 mt-0 border-2 rounded-lg'>
-        <h1 className='text-center font-bold text-5xl'>Hackathon-1</h1>
+      <section className="bg-[#EFEBE9] min-h-screen py-10 px-4">
+        {/* <h1 className="text-4xl md:text-5xl font-extrabold text-center text-[#5D4037] mb-6 underline decoration-[#8D6E63] underline-offset-4">
+          My Projects
+        </h1> */}
 
-        <p className='text-center  font-bold text-3xl py-5'>Quarter-2</p>
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 max-w-4xl mx-auto mb-10 border-t-8 border-[#8D6E63]">
+          <h2 className="text-3xl font-bold text-center text-[#6D4C41] mb-2">My Project</h2>
+          {/* <p className="text-xl font-medium text-center text-[#795548]">My Projects</p> */}
         </div>
-        <div className='flex py-12 flex-col md:flex-row space-y-8  md:space-x-2'>
-        </div>
-        
-        
-        {/* //every project here */}
-        <Border />   
-        
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Future projects will be placed here */}
+        </div>
+
+        <Border />
+      </section>
     </Wrapper>
-
-  )
+  );
 }

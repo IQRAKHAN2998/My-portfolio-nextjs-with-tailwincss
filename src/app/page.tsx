@@ -16,22 +16,25 @@ export default function Main() {
         <Home />
       </section>
 
-      {/* {/* about me */}
+
       <Wrapper>
+
+        {/* project */}
+        <section id="projects">
+          <Projects />
+        </section>
+        
+        {/* {/* about me */}
         <section id="about">
           <About />
         </section>
 
-        {/* project */}
-         <section id="projects">
-          <Projects />
-        </section>
-      </Wrapper> 
+      </Wrapper>
 
       {/* contact */}
-       <section id="contact">
+      <section id="contact">
         <Contact />
-      </section> 
+      </section>
     </main>
   )
 }

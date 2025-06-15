@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import Link from 'next/link';
 import Wrapper from "../../components/wrapper/page";
@@ -13,6 +12,24 @@ interface ItemProps {
 
 // Array of items
 const items: ItemProps[] = [
+  {
+    imageUrl: '/password.jpeg',
+    linkUrl: 'https://ikgeneratepassword.streamlit.app/',
+    buttonText: 'Secure_Generate_Password'
+
+  },
+  {
+    imageUrl: '/currency.png',
+    linkUrl: 'https://multiconvertor.streamlit.app/',
+    buttonText: 'Currency_Converter'
+
+  },
+  {
+    imageUrl: '/file_converter.png',
+    linkUrl: 'https://growth-mindset-file-converter.streamlit.app/',
+    buttonText: 'Growth_Mindset_File_Converter'
+
+  },
   {
     imageUrl: '/website.png',
     linkUrl: 'https://hackathon-template-0-8gxr.vercel.app',
@@ -89,23 +106,34 @@ const items: ItemProps[] = [
 const MyComponent: React.FC = () => {
   return (
     <Wrapper>
-      <div className='flex justify-around flex-col flex-wrap sm:flex-row items-center space-y-5'>
-    
-      {items.map((item, index) => (
-        <div key={index}  className=" mx-20 shadow-xl rounded-xl w-4/12 text-blue-950 items-center max-w-full  border-4 border-black">
-          {/* Image */}
-          <Image src={item.imageUrl} alt={`Image ${index + 1}`} width={300} height={250} className="w-500 h-40" />
+  <div className="flex flex-wrap justify-center gap-6 py-10 px-4">
+    {items.map((item, index) => (
+      <div
+        key={index}
+        className="bg-white shadow-lg rounded-2xl w-full sm:w-[300px] md:w-[320px] p-4 border border-gray-300 hover:shadow-2xl transition-shadow duration-300"
+      >
+        {/* Image */}
+        <Image
+          src={item.imageUrl}
+          alt={`Image ${index + 1}`}
+          width={300}
+          height={200}
+          className="rounded-md object-cover w-full h-[180px]"
+        />
 
-          {/* Link */}
-          <Link href={item.linkUrl} target="_blank" className="text-blue-900 align-center  font-bold underline text-2xl  ">
-          <h2 className="text-center pt-2 pb-2">{item.buttonText}</h2> 
-          </Link>
+        {/* Link */}
+        <Link
+          href={item.linkUrl}
+          target="_blank"
+          className="block text-center mt-4 text-[#5D4037] font-semibold text-xl hover:underline"
+        >
+          {item.buttonText}
+        </Link>
+      </div>
+    ))}
+  </div>
+</Wrapper>
 
-        
-        </div>
-      ))}
-    </div>
-    </Wrapper>
   );
 };
 
