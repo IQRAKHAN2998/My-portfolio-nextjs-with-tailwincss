@@ -1,9 +1,37 @@
+
 "use client";
 
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+
 export default function Contact() {
+  const form = useRef(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_dkz739d",     // ← Replace this with your actual service ID
+        "template_6jxfp0a",    // ← Replace this with your template ID
+        form.current!,
+        "nZEO4bX0a9up3zctf"      // ← Replace this with your public key
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+      })
+      .catch((error) => {
+        alert("Failed to send message: " + error.text);
+      });
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#EFEBE9] px-4">
-      <form className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md space-y-4">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md space-y-4"
+      >
         <h3 className="font-bold text-3xl text-center text-[#5D4037]">Contact Me</h3>
 
         <input
