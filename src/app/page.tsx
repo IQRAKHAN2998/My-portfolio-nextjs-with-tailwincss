@@ -4,7 +4,7 @@ import Home from "@/app/home/page";
 import About from "@/app/about/page";
 import Projects from "@/app/project/page";
 import Contact from "@/app/contact/page";
-import Wrapper from "@/components/wrapper/page";
+// import Wrapper from "@/components/wrapper/page";
 // import Contact from "@/app/contact/page";
 
 export default function Main() {
@@ -17,7 +17,7 @@ export default function Main() {
       </section>
 
 
-      <Wrapper>
+      {/* <Wrapper> */}
 
         {/* project */}
         <section id="projects">
@@ -29,7 +29,7 @@ export default function Main() {
           <About />
         </section>
 
-      </Wrapper>
+      {/* </Wrapper> */}
 
       {/* contact */}
       <section id="contact">

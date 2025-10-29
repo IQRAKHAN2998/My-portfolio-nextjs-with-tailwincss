@@ -7,7 +7,7 @@ interface Iprops {
 const Button = (props: Iprops) => {
   return (
     <button
-      className="bg-[#5D4037] text-white font-semibold text-xl tracking-wide px-6 py-3 rounded-full shadow-md hover:bg-[#4E342E] hover:shadow-xl hover:scale-105 transition-all duration-300"
+      className="bg-gradient-to-r from-[#f3683a] to-[#ff9f59] text-white font-semibold text-lg tracking-wide px-8 py-3 rounded-full shadow-lg hover:from-[#ff9f59] hover:to-[#f3683a] hover:shadow-[#f3683a]/50 hover:scale-105 transition-all duration-300"
     >
       {props.text}
     </button>
