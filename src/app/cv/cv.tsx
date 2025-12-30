@@ -6,7 +6,7 @@ const Cv = () => {
   return (
     <div >
         {/* <a href="document/iqrakhan_cv.pdf" target="_blank"> */}
-        <a href="document/iqrakhan_agentic_ai.pdf" target="_blank">
+        <a href="document/ik_resume.pdf" target="_blank">
 
 
         
